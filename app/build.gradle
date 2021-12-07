@@ -40,6 +40,7 @@ android {
 
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation project(path: ':hplyricslibrary')
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -83,7 +84,7 @@ dependencies {
     /**
      * 歌词
      */
-    implementation 'com.github.zhangliangming:HPLyrics:v1.47'
+    //implementation 'com.github.zhangliangming:HPLyrics:v1.47'
     /**
      * 音频
      */

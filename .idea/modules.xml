@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HappyPlayer5.iml" filepath="$PROJECT_DIR$/HappyPlayer5.iml" />
-      <module fileurl="file://D:\Workspaces\android_git\HappyPlayer5\HappyPlayer5.iml" filepath="D:\Workspaces\android_git\HappyPlayer5\HappyPlayer5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HappyPlayer5.iml" filepath="$PROJECT_DIR$/.idea/modules/HappyPlayer5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HappyPlayer5.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HappyPlayer5.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hplyricslibrary/HappyPlayer5.hplyricslibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/hplyricslibrary/HappyPlayer5.hplyricslibrary.iml" />
     </modules>
   </component>
 </project>
