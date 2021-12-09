@@ -190,13 +190,12 @@ public class LrcFragment extends BaseFragment {
                 } else {
                     fileName = mCurAudioInfo.getSingerName() + " - " + mCurAudioInfo.getSongName();
                 }
-                mLrcFilePath = ResourceFileUtil.getFilePath(mActivity.getApplicationContext(), ResourceConstants.PATH_LYRICS,  "join_word_ori.lrc");
-                String text = ResourceFileUtil.getFilePath(mActivity.getApplicationContext(), ResourceConstants.PATH_LYRICS,  "join_word_ori_text.lrc");
+                mLrcFilePath = ResourceFileUtil.getFilePath(mActivity.getApplicationContext(), ResourceConstants.PATH_LYRICS, fileName + ".krc");
 
                 //
                 LyricsReader lyricsReader = new LyricsReader();
                 lyricsReader.setHash(mHash);
-                lyricsReader.loadLrc(mDownloadLyricsResult.getContent(), new File(text), mLrcFilePath);
+                lyricsReader.loadLrc(mDownloadLyricsResult.getContent(), null, mLrcFilePath);
                 mManyLineLyricsView.setTextMaxWidth(mScreensWidth / 3 * 2);
                 mManyLineLyricsView.setLyricsReader(lyricsReader);
                 if (mHPApplication.getPlayStatus() == AudioPlayerManager.PLAYING && mManyLineLyricsView.getLrcStatus() == AbstractLrcView.LRCSTATUS_LRC && mManyLineLyricsView.getLrcPlayerStatus() != AbstractLrcView.LRCPLAYERSTATUS_PLAY)
